@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;800&family=Lemon&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+ background-color: black;
+ height: 12vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+nav ul li{
+    text-decoration: none;
+    font-family: 'Lemon';
+    font-weight: 800;
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    height: calc(100vh - 12vh);
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamebox{
+    width: 40vw;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px 3px white;
+    height: 70vh;
+    margin-left: 10vw;
+    border: 3px solid rgba(255, 255, 255, 0.489);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    background-color: rgba(255, 255, 255, 0.338);
+}
+
+.gameinfo{
+    width: 30vw;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.848);
+    border: 3px solid black;
+    box-shadow: 0 0 10px 3px white;
+    height: 70vh;
+    margin-right: 10vw;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: black;
+    transition: width 1s ease-in-out;
+}
+
+.gameinfo h2{
+    font-family: 'salsa';
+}
+
+.turn_number{
+    font-family: 'salsa';
+}
+
+.turn_number button{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 60px;
+    padding: 2px 0;
+}
+
+.turn_number button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    width: 58px;
+    padding: 0 0;
+}
+
+
+.box{
+    color: red;
+    font-family: 'Open Sans';
+    font-weight: bolder;
+    font-size: 5vw;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.bt{
+    border-top: 0;
+}
+
+.br{
+    border-right: 0;
+}
+
+.bl{
+    border-left: 0;
+}
+
+.bb{
+    border-bottom: 0;
+}

@@ -1,0 +1,48 @@
+@media (max-width: 754px){
+    
+
+    .container {
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .gamebox{
+        height: 40vh;
+        margin-left: 0vw;
+        width: 60vw;
+    }
+
+    .gameinfo{
+        height: 30vh;
+        width: 70vw;
+        margin-top: 5vh;
+        margin-right: 0vw;
+    }
+}
+
+@media (max-width: 670px){
+    .board{
+        grid-template-columns: repeat(3, 12vw);
+        grid-template-rows: repeat(3, 12vw);
+    }
+}
+
+@media (max-width: 500px){
+    .board{
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+}
+
+@media (max-width: 203px){
+    .board{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
+
+@media (max-width: 357px){
+    nav ul li{
+        font-size: 30px;
+    }
+}
